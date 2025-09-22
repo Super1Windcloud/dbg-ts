@@ -1,5 +1,5 @@
-import path from "node:path";
 import * as fs from "node:fs";
+import path from "node:path";
 
 export function findProjectRoot(startDir: string): string {
   let dir = startDir;
