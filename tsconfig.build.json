@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "strict": true,
+    "module": "nodenext",
+    "target": "esnext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "find.ts",
+    "test.ts",
+    "index.ts"
+  ]
+}

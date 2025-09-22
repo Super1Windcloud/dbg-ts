@@ -1,0 +1,31 @@
+{
+  "name": "macro",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "b": "tsc",
+    "build:ts": "tsc --project tsconfig.build.json",
+    "build:esbuild": "esbuild src/index.ts --bundle --outdir=dist --format=esm --platform=node",
+    "build": "npm run build:ts && npm run build:esbuild"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "dbg,ts,node"
+  ],
+  "author": "superwindcloud",
+  "homepage": "https://github.com/super1windcloud ",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "esbuild": "^0.25.10",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
